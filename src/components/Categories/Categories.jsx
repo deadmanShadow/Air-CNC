@@ -10,12 +10,10 @@ const Categories = () => {
     <Container>
       <div className='pt-4 flex flex-row items-center justify-between overflow-x-auto'>
         {categories.map(item => (
-          <CategoryBox
-            label={item.label}
+          <CategoryBox label={item.label}
             icon={item.icon}
             key={item.label}
-            selected={category === item.label}
-          />
+            selected={category === item.label}></CategoryBox>
         ))}
       </div>
     </Container>

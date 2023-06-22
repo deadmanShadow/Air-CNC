@@ -69,12 +69,10 @@ const RoomDataRow = ({ room, fetchRooms }) => {
           ></span>
           <span className='relative'>Delete</span>
         </span>
-        <DeleteModal
-          isOpen={isOpen}
+        <DeleteModal isOpen={isOpen}
           closeModal={closeModal}
           modalHandler={modalHandler}
-          id={room._id}
-        />
+          id={room._id}></DeleteModal>
       </td>
       <td className='px-5 py-5 border-b border-gray-200 bg-white text-sm'>
         <span className='relative cursor-pointer inline-block px-3 py-1 font-semibold text-green-900 leading-tight'>

@@ -83,14 +83,12 @@ const AddRoom = () => {
   }
   return (
     <div>
-      <AddRoomForm
-        handleSubmit={handleSubmit}
+      <AddRoomForm handleSubmit={handleSubmit}
         loading={loading}
         handleImageChange={handleImageChange}
         uploadButtonText={uploadButtonText}
         dates={dates}
-        handleDates={handleDates}
-      />
+        handleDates={handleDates}></AddRoomForm>
     </div>
   )
 }

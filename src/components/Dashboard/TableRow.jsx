@@ -65,12 +65,11 @@ const TableRow = ({ booking, fetchBookings }) => {
           ></span>
           <span className='relative'>Cancel</span>
         </span>
-        <DeleteModal
-          isOpen={isOpen}
+        <DeleteModal isOpen={isOpen}
           closeModal={closeModal}
           modalHandler={modalHandler}
-          id={booking._id}
-        />
+          id={booking._id}></DeleteModal>
+
       </td>
     </tr>
   )

@@ -63,11 +63,9 @@ const MyBookings = () => {
               <tbody>
                 {bookings &&
                   bookings.map(booking => (
-                    <TableRow
-                      key={booking._id}
-                      booking={booking}
-                      fetchBookings={fetchBookings}
-                    />
+                    <TableRow key={booking._id}
+                    booking={booking}
+                    fetchBookings={fetchBookings}></TableRow>
                   ))}
               </tbody>
             </table>

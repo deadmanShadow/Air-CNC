@@ -66,18 +66,16 @@ const MyListings = () => {
               <tbody>
                 {rooms &&
                   rooms.map(room => (
-                    <RoomDataRow
-                      key={room?._id}
+                    <RoomDataRow key={room?._id}
                       room={room}
-                      fetchRooms={fetchRooms}
-                    />
+                      fetchRooms={fetchRooms}></RoomDataRow>
                   ))}
               </tbody>
             </table>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

@@ -98,10 +98,10 @@ const Sidebar = () => {
                     </span>
                   </label>
                   {/* Menu Links */}
-                  {toggle ? <HostMenu /> : <GuestMenu />}
+                  {toggle ? <HostMenu></HostMenu>: <GuestMenu></GuestMenu>}
                 </>
               ) : (
-                <GuestMenu />
+                <GuestMenu></GuestMenu>
               )}
             </nav>
           </div>
