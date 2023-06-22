@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
-import AddRoomForm from '../../components/Forms/AddRoomForm'
 import { imageUpload } from '../../../api/utils'
 import { addRoom } from '../../../api/rooms'
 import toast from 'react-hot-toast'
 import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../../providers/AuthProvider'
+import AddRoomForm from '../../../components/Forms/AddRoomForm'
 
 const AddRoom = () => {
   const navigate = useNavigate()
