@@ -1,8 +1,8 @@
 import React from 'react'
-import { categories } from './categoriesData'
 import { useSearchParams } from 'react-router-dom'
 import Container from '../Shared/Container'
-import CategoryBox from './CategoryBox'
+import { categories } from './categoriesData'
+import CategoryBox from '../Categories/CategoryBox'
 const Categories = () => {
   const [params, setParams] = useSearchParams()
   const category = params.get('category')

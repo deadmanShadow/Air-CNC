@@ -3,10 +3,9 @@ import Avatar from './Avatar'
 import { useCallback, useContext, useState } from 'react'
 import { AuthContext } from '../../../providers/AuthProvider'
 import { Link } from 'react-router-dom'
-import { toast } from 'react-hot-toast'
-import { becomeHost } from '../../../api/auth'
 import HostModal from '../../Modal/HostRequestModal'
-
+import { becomeHost } from '../../../api/auth'
+import { toast } from 'react-hot-toast'
 
 const MenuDropdown = () => {
   const { user, logOut, role, setRole } = useContext(AuthContext)
@@ -28,7 +27,7 @@ const MenuDropdown = () => {
   return (
     <div className='relative'>
       <div className='flex flex-row items-center gap-3'>
-        {/* AirCNC btn */}
+        {/* Aircnc btn */}
         <div className='hidden md:block text-sm font-semibold rounded-full py-3 px-8   transition'>
           {!role && (
             <button
@@ -36,7 +35,7 @@ const MenuDropdown = () => {
               onClick={() => setModal(true)}
               disabled={!user}
             >
-              AirCNC your home
+              AirCNC Your Home
             </button>
           )}
         </div>
@@ -98,13 +97,12 @@ const MenuDropdown = () => {
           </div>
         </div>
       )}
-       <HostModal
+      <HostModal
         email={user?.email}
         modalHandler={modalHandler}
         isOpen={modal}
         closeModal={closeModal}
       />
-        
     </div>
   )
 }
