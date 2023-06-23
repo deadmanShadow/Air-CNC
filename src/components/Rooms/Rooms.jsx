@@ -16,6 +16,7 @@ const Rooms = () => {
     setLoading(true)
     getAllRooms()
       .then(data => {
+        console.log(data);
         if (category) {
           const filtered = data.filter(room => room.category === category)
           setRooms(filtered)

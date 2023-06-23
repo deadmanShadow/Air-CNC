@@ -16,12 +16,21 @@ const RoomReservation = ({ roomData }) => {
   const { user, role } = useContext(AuthContext)
 
   // Price Calculation
-  const totalPrice =
+
+    const totalPrice =
     parseFloat(
       formatDistance(new Date(roomData.to), new Date(roomData.from)).split(
         ' '
       )[0]
     ) * roomData.price
+
+    // Price Calculation
+  // const totalPrice =
+  // roomData?.from && roomData?.to
+  //   ? parseFloat(
+  //       formatDistance(new Date(roomData.to), new Date(roomData.from)).split(' ')[0]
+  //     ) * roomData.price
+  //   : 0;
 
   const [value, setValue] = useState({
     startDate: new Date(roomData?.from),
